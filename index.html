@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#243d32">
+  <title>Encantos do Brasil</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="game">
+    <header class="cabecalho">
+      <p class="subtitulo">UM ENCONTRO COM AS LENDAS DO FOLCLORE BRASILEIRO</p>
+      <h1>Encantos do Brasil</h1>
+      <p class="descricao">Vire as cartas, descubra os personagens e encontre os pares das lendas brasileiras!</p>
+    </header>
+
+    <section class="painel" aria-label="Placar do jogo">
+      <div class="estatistica">
+        <span class="rotulo">Tentativas</span>
+        <strong id="tentativas">0</strong>
+      </div>
+
+      <div class="estatistica">
+        <span class="rotulo">Lendas descobertas</span>
+        <strong id="pares">0 / 12</strong>
+      </div>
+
+      <button id="reiniciar" type="button">Nova partida</button>
+    </section>
+
+    <section
+      id="tabuleiro"
+      class="tabuleiro"
+      aria-label="Cartas do jogo da memória">
+    </section>
+
+    <p id="mensagem" class="mensagem" role="status" aria-live="polite">
+      As lendas estão escondidas. Será que você consegue encontrá-las?
+    </p>
+
+    <footer>
+      Cada lenda guarda um pedacinho da nossa cultura.
+    </footer>
+  </main>
+</body>
+</html>
